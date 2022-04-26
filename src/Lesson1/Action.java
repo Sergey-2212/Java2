@@ -10,14 +10,14 @@ public class Action {
                 new Robot(),
                 new Human()};
 
-        Barrier[] track = {
+        Barrier[] barriers = {
                 new RunWay(),
                 new Wall(),
                 new RunWay(),
                 new Wall()};
 
         for (CompetitionMember member : members) {
-            for (Barrier barrier : track) {
+            for (Barrier barrier : barriers) {
                if(!barrier.gotIt(member)) break;
             }
         }
